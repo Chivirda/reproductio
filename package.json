@@ -20,5 +20,8 @@
     "webpack-stream": "^5.2.1"
   },
   "author": "Sergey Chivirda",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^6.0.4"
+  }
 }

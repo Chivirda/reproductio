@@ -44,7 +44,10 @@ function buildStyles() {
 
 function buildScripts() {
   return src('src/scripts/*.js')
-        .pipe(webpack({ output: { filename: 'bundle.js'}}))
+        .pipe(webpack({
+          mode: 'development',
+          output: { filename: 'bundle.js'}
+        }))
         .pipe(dest('build/scripts/'))
 }
 
