@@ -418,7 +418,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ \"./node_modules/swiper/swiper.esm.js\");\n\r\nswiper__WEBPACK_IMPORTED_MODULE_0__[\"default\"].use([swiper__WEBPACK_IMPORTED_MODULE_0__[\"Navigation\"], swiper__WEBPACK_IMPORTED_MODULE_0__[\"Pagination\"]])\r\n\r\nconst mainSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.swiper-container', {\r\n  slidesPerView: 1\r\n})\r\n\n\n//# sourceURL=webpack:///./src/scripts/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ \"./node_modules/swiper/swiper.esm.js\");\n\nswiper__WEBPACK_IMPORTED_MODULE_0__[\"default\"].use([swiper__WEBPACK_IMPORTED_MODULE_0__[\"Navigation\"], swiper__WEBPACK_IMPORTED_MODULE_0__[\"Pagination\"]])\n\nconst mainSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.swiper-container', {\n  slidesPerView: 1,\n  width: 900,\n  autoHeight: true,\n  pagination: {\n    el: '.swiper-pagination',\n    type: 'bullets',\n  },\n  spaceBetween: 30\n})\n\n\n//# sourceURL=webpack:///./src/scripts/main.js?");
 
 /***/ })
 
