@@ -46,7 +46,12 @@ function buildScripts() {
   return src('src/scripts/*.js')
         .pipe(webpack({
           mode: 'development',
-          output: { filename: 'bundle.js'}
+          output: { filename: 'bundle.js'},
+          module: {
+            rules: [
+              { test: /\.css$/, use: 'css-loader' }
+            ]
+          }
         }))
         .pipe(dest('build/scripts/'))
 }
