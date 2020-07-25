@@ -22,7 +22,5 @@
   },
   "author": "Sergey Chivirda",
   "license": "ISC",
-  "dependencies": {
-    "swiper": "^6.0.4"
-  }
+  "dependencies": {}
 }

@@ -1,5 +1,6 @@
 const mainSwiper = document.querySelector('.swiper-main')
 const previewSwiper = document.querySelector('.swiper-preview')
+const sliderPopular = document.querySelector('.swiper-popular')
 
 
 const previewSlider = new Swiper(previewSwiper, {
@@ -18,12 +19,16 @@ const mainSlider = new Swiper(mainSwiper, {
   width: 900,
   loop: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.main-button-next',
+    prevEl: '.main-button-prev',
   },
   spaceBetween: 30,
   thumbs: {
     swiper: previewSlider
   },
   loopedSlides: 3
+})
+
+const popularSlider = new Swiper(sliderPopular, {
+  
 })

@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  position: relative;
 }
 
 .main-wrapper {
@@ -67,4 +68,8 @@ img {
 
 .swiper-slide-thumb-active {
   opacity: 0.6;
+}
+
+.popular {
+  background-color: #000000;
 }
