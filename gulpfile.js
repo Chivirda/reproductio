@@ -56,17 +56,23 @@ function buildScripts() {
         .pipe(dest('build/scripts/'))
 }
 
-function buildAssets() {
+function minImages() {
   return src('src/images/**/*.*')
         .pipe(imageMin())
         .pipe(dest('build/images/'))
+}
+
+function copyAssets() {
+  return src('src/assets/**/*.*')
+        .pipe(dest('build/assets/'))
 }
 
 function watchFiles() {
   watch('src/pages/*.pug', buildPages)
   watch('src/styles/*.scss', buildStyles)
   watch('src/scripts/*.js', buildScripts)
-  watch('src/images/**/*.*', buildAssets)
+  watch('src/images/**/*.*', minImages)
+  watch('src/assets/**/*.*', copyAssets)
 }
 
 function deploy() {
@@ -79,7 +85,7 @@ exports.default = series(
   parallel(
     devServer,
     series(
-      parallel(buildPages, buildStyles, buildScripts, buildAssets),
+      parallel(buildPages, buildStyles, buildScripts, minImages, copyAssets),
       watchFiles
     )
   )
