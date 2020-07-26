@@ -16,7 +16,6 @@ const previewSlider = new Swiper(previewSwiper, {
 
 const mainSlider = new Swiper(mainSwiper, {
   slidesPerView: 1,
-  width: 900,
   loop: true,
   navigation: {
     nextEl: '.main-button-next',
