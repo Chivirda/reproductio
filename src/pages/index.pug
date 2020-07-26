@@ -8,7 +8,7 @@ body
       .header__links
         a(href="tel:+78129602201" class="header__contacts") +7 812 960-22-01
         a(href="mailto:shop@reproduct.io" class="header__contacts") shop@reproduct.io
-    section.main
+    .main
       .swiper-main
         .swiper-wrapper
           .swiper-slide.card
@@ -19,44 +19,44 @@ body
               .card__right
                 span.card__prop 97 x 108 см, холст
                 span.card__price 2400 &#8381;
-            img(src="images/main-slider/venus.jpg", alt="Рождение венеры" class="slider-image")
+            img(src="images/main-slider/venus.jpg", alt="Рождение венеры")
           .swiper-slide.card
             .card__info
               .card__left
                 span.card__name Шестикрылый серафим, 1857 
                 span.card__author Михаил Врубель
               .card__right
-                span.card__prop 97 x 108 см, холст
-                span.card__price 2400 &#8381;
-            img(src="images/main-slider/seraphim.jpg", alt="Шестикрылый серафим" class="slider-image")
+                span.card__prop 131 x 108 см, холст
+                span.card__price 4100 &#8381;
+            img(src="images/main-slider/seraphim.jpg", alt="Шестикрылый серафим")
           .swiper-slide.card
             .card__info
               .card__left
                 span.card__name Явление Христа народу, 1857 
                 span.card__author Александр Иванов
               .card__right
-                span.card__prop 97 x 108 см, холст
-                span.card__price 2400 &#8381;
-            img(src="images/main-slider/christ.jpg", alt="Явление Христа народу" class="slider-image")
-        .main-button-prev
-        .main-button-next
+                span.card__prop 120 x 90 см, холст
+                span.card__price 3700 &#8381;
+            img(src="images/main-slider/christ.jpg", alt="Явление Христа народу")
       .swiper-preview
         .swiper-wrapper
           .swiper-slide
-            img(src="images/main-slider/venus.jpg", alt="Рождение венеры" class="slider-image")
+            img(src="images/main-slider/venus.jpg", alt="Рождение венеры")
           .swiper-slide
-            img(src="images/main-slider/seraphim.jpg", alt="Шестикрылый серафим" class="slider-image")
+            img(src="images/main-slider/seraphim.jpg", alt="Шестикрылый серафим")
           .swiper-slide
-            img(src="images/main-slider/christ.jpg", alt="Явление Христа народу" class="slider-image")
-  section.popular
+            img(src="images/main-slider/christ.jpg", alt="Явление Христа народу")
+  .popular
+    h3.popular__heading Популярное
+    span.popular__text Нестареющая классика и бестселлеры
     .swiper-popular
       .swiper-wrapper
-        .swiper-slide
-          img(src="images/popular/girl.jpeg", alt="Рождение венеры" class="slider-image")
-        .swiper-slide
-          img(src="images/popular/bonapart.jpg", alt="Шестикрылый серафим" class="slider-image")
-        .swiper-slide
-          img(src="images/popular/hunters.jpg", alt="Явление Христа народу" class="slider-image")
-      .swiper-button-prev
-      .swiper-button-next
+        .swiper-slide.popular__card
+          img(src="images/popular/girl.jpeg", alt="Рождение венеры")
+        .swiper-slide.popular__card
+          img(src="images/popular/bonapart.jpg", alt="Шестикрылый серафим")
+        .swiper-slide.popular__card
+          img(src="images/popular/hunters.jpg", alt="Явление Христа народу")
+      i(class="fas fa-caret-left popular-left")
+      i(class="fas fa-caret-right popular-right")
 include parts/footer.pug

@@ -49,9 +49,9 @@ img {
 	object-fit: cover;
 }
 
-.slider-image {
-  max-width: 920px;
-  object-fit: cover;
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	display: none;
 }
 
 .swiper-slide {

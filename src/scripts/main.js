@@ -18,8 +18,8 @@ const mainSlider = new Swiper(mainSwiper, {
   slidesPerView: 1,
   loop: true,
   navigation: {
-    nextEl: '.main-button-next',
-    prevEl: '.main-button-prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   spaceBetween: 30,
   thumbs: {
@@ -29,5 +29,10 @@ const mainSlider = new Swiper(mainSwiper, {
 })
 
 const popularSlider = new Swiper(sliderPopular, {
-  
+  slidesPerView: 3,
+  loop: true,
+  navigation: {
+    nextEl: '.popular-right',
+    prevEl: '.popular-left',
+  },
 })
