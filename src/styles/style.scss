@@ -56,6 +56,34 @@ img {
 	display: none;
 }
 
+.main-left,
+.main-right {
+  position: absolute;
+  color: #d8d3cf;
+  top: 50%;
+  z-index: 1;
+  font-size: 25px;
+  &:hover {
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+.main-left {
+  left: 0;
+  margin-left: 5px;
+}
+
+.main-right {
+  right: 0;
+  margin-right: 5px;
+}
+
+.swiper-main {
+  overflow: hidden;
+  position: relative;
+}
+
 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -64,6 +92,7 @@ img {
 .card {
   position: relative;
   width: 900px;
+  height: 600px;
 }
 
 .card__info {
@@ -96,9 +125,7 @@ img {
   color: #e0a201;
 }
 
-.swiper-main {
-  overflow: hidden;
-}
+
 
 .swiper-preview {
   width: 300px;
