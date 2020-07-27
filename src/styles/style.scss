@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
 @import './popular.scss';
 
 :root {
@@ -17,7 +17,7 @@ body {
   grid-template-columns: 1fr 4fr;
   justify-content: space-between;
   grid-gap: 30px;
-  padding: 50px;
+  padding: 30px;
 }
 
 .main {
@@ -30,12 +30,17 @@ body {
   font-style: normal;
   color: var(--address-color);
   text-decoration: none;
+  margin-top: 50px;
 }
 
 .header__links {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 5px;
+  .header__link {
+    color: var(--address-color);
+    text-decoration: none;
+  }
   :hover {
     color: #000000;
   }
@@ -43,6 +48,9 @@ body {
 
 .header__heading {
   margin: 0 auto;
+  font-weight: 550;
+  font-size: 45px;
+  line-height: 42px;
 }
 
 
