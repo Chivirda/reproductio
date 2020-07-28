@@ -4,10 +4,14 @@
   background-color: #000000;
   overflow: hidden;
   padding-bottom: 50px;
+  margin: 0 auto;
 }
 
 .popular .container {
   position: relative;
+  @media (max-width: 1366px) {
+    max-width: 90%;
+  }
 }
 
 
