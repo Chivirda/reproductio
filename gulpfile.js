@@ -68,7 +68,7 @@ function copyAssets() {
 }
 
 function watchFiles() {
-  watch('src/pages/*.pug', buildPages)
+  watch('src/pages/**/*.pug', buildPages)
   watch('src/styles/*.scss', buildStyles)
   watch('src/scripts/*.js', buildScripts)
   watch('src/images/**/*.*', minImages)
