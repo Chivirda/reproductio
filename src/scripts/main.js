@@ -35,4 +35,5 @@ const popularSlider = new Swiper(sliderPopular, {
     nextEl: '.popular-right',
     prevEl: '.popular-left',
   },
+  spaceBetween: 200
 })

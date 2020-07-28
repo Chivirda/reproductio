@@ -3,23 +3,37 @@
   flex-direction: column;
   background-color: #000000;
   overflow: hidden;
-  padding: 30px;
+  padding-bottom: 50px;
+}
+
+.popular .container {
+  position: relative;
+}
+
+
+.popular__heading,
+.popular__text {
+  color: #ffffff;
+}
+
+.popular__heading {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+.popular__text {
+  opacity: 0.6;
 }
 
 .swiper-popular {
-  max-width: 100%;
+  max-width: 94%;
   overflow: hidden;
-}
-
-.popular-left,
-.popular-right {
-  color: #ffffff;
-  opacity: 0.6;
-  cursor: pointer;
-  position: absolute;
-  :hover {
-    opacity: 1;
-  }
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
 }
 
 .popular-left {
@@ -31,24 +45,41 @@
 }
 
 .popular__card {
-  margin-top: 30px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.popular__card-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.card__name {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .swiper-slide.popular__card img {
-  height: 300px;  
+  width: 500px;
 }
 
-.popular__heading,
-.popular__text {
-  color: #ffffff;
+.popular__img-girl {
+  box-shadow: 0 0 50px rgba(0, 71, 171, 0.6);
 }
 
-.popular__heading {
-  font-size: 32px;
-  font-weight: 400;
-  margin-bottom: 8px;
+.popular__img-bonapart {
+  box-shadow: 0 0 50px rgba(255, 0, 51, 0.6);
 }
 
-.popular__text {
-  opacity: 0.6;
+.popular__img-hunters {
+  box-shadow: 0 0 50px rgba(120, 219, 226, 0.6);
 }

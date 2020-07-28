@@ -1,6 +1,6 @@
 include parts/header.pug
 body
-  .main-wrapper
+  .main-wrapper.container
     header.header
       h1(class="header__heading") Репро дукцио
       p Оффлайн магазин репродукий шедевров мирового искусства
@@ -49,16 +49,35 @@ body
           .swiper-slide
             img(src="images/main-slider/christ.jpg", alt="Явление Христа народу")
   .popular
-    h3.popular__heading Популярное
-    span.popular__text Нестареющая классика и бестселлеры
-    .swiper-popular
-      .swiper-wrapper
-        .swiper-slide.popular__card
-          img(src="images/popular/girl.jpeg", alt="Рождение венеры")
-        .swiper-slide.popular__card
-          img(src="images/popular/bonapart.jpg", alt="Шестикрылый серафим")
-        .swiper-slide.popular__card
-          img(src="images/popular/hunters.jpg", alt="Явление Христа народу")
-      i(class="fas fa-caret-left popular-left")
-      i(class="fas fa-caret-right popular-right")
+    .container
+      h3.popular__heading Популярное
+      span.popular__text Нестареющая классика и бестселлеры
+      .swiper-popular
+        .swiper-wrapper
+          .swiper-slide.popular__card
+            img(src="images/popular/girl.jpeg", alt="Девушка с жемчужной сережкой" class="popular__img-girl")
+            .popular__card-info
+              span.card__name Девушка с жемчужной сережкой, 1655 
+              span.card__author Ян Вермеер
+              .card__footer
+                span.card__prop 44 x 39 см, холст
+                span.card__price 900 &#8381;
+          .swiper-slide.popular__card
+            img(src="images/popular/bonapart.jpg", alt="Бонапарт на перевале Сен-Бернар" class="popular__img-bonapart")
+            .popular__card-info
+              span.card__name Бонапарт на перевале Сен-Бернар, 1801 
+              span.card__author Жак-Луи Давид
+              .card__footer
+                span.card__prop 261 x 220 см, холст
+                span.card__price 3 900 &#8381;
+          .swiper-slide.popular__card
+            img(src="images/popular/hunters.jpg", alt="Охотники на снегу" class="popular__img-hunters")
+            .popular__card-info
+              span.card__name Охотники на снегу, 1565 
+              span.card__author Питер Брейгель Старший
+              .card__footer
+                span.card__prop 117 x 162 см, холст
+                span.card__price 2 400 &#8381;
+        i(class="fas fa-caret-left popular-left")
+        i(class="fas fa-caret-right popular-right")
 include parts/footer.pug

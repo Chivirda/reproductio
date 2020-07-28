@@ -20,6 +20,11 @@ body {
   padding: 30px;
 }
 
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
 .main {
   display: grid;
   grid-template-columns: 700px 150px;
@@ -65,7 +70,9 @@ img {
 }
 
 .main-left,
-.main-right {
+.main-right,
+.popular-left,
+.popular-right {
   position: absolute;
   color: #d8d3cf;
   top: 50%;
@@ -132,8 +139,6 @@ img {
 .card__price {
   color: #e0a201;
 }
-
-
 
 .swiper-preview {
   width: 300px;
