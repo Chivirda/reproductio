@@ -62,9 +62,9 @@ function minImages() {
         .pipe(dest('build/images/'))
 }
 
-function copyAssets() {
-  return src('src/assets/**/*.*')
-        .pipe(dest('build/assets/'))
+function copyVendor() {
+  return src('src/vendor/**/*.*')
+        .pipe(dest('build/vendor/'))
 }
 
 function watchFiles() {
@@ -72,7 +72,7 @@ function watchFiles() {
   watch('src/styles/*.scss', buildStyles)
   watch('src/scripts/*.js', buildScripts)
   watch('src/images/**/*.*', minImages)
-  watch('src/assets/**/*.*', copyAssets)
+  watch('src/vendor/**/*.*', copyVendor)
 }
 
 function deploy() {
@@ -85,7 +85,7 @@ exports.default = series(
   parallel(
     devServer,
     series(
-      parallel(buildPages, buildStyles, buildScripts, minImages, copyAssets),
+      parallel(buildPages, buildStyles, buildScripts, minImages, copyVendor),
       watchFiles
     )
   )
