@@ -150,7 +150,14 @@ img {
 .swiper-preview .swiper-slide {
   width: 300px;
   height: 170px;
+  &:hover {
+    cursor: pointer;
+  }
 }
+
+.swiper-preview .swiper-slide-thumb-active:hover {
+  cursor: default;
+} 
 
 .swiper-preview .swiper-slide img {
   max-height: 100%;
